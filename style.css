@@ -1,0 +1,48 @@
+html, body { height: 100%; margin: 0; }
+body { background:#000; display:flex; align-items:center; justify-content:center; }
+
+.wrap { width: 100%; display:flex; justify-content:center; padding: 12px; }
+
+.viewer {
+  position: relative;
+  width: min(900px, 96vw);     /* QUI decidi la dimensione */
+  height: min(1200px, 92vh);   /* QUI decidi la dimensione */
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display:block;
+}
+
+.zone {
+  position:absolute;
+  top:0;
+  width: 22%;
+  height: 100%;
+  background: transparent;
+  border:0;
+  cursor:pointer;
+}
+.zone.left { left:0; }
+.zone.right { right:0; }
+
+.hud {
+  position:absolute;
+  left: 12px;
+  bottom: 12px;
+  color:#fff;
+  font: 14px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: rgba(0,0,0,.45);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.page {
+  object-fit: contain;
+  background: #000;
+}
