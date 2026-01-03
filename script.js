@@ -1,5 +1,5 @@
 // Immagini PNG numerate: 01.png, 02.png, 03.png...
-const totalPages = 30; // ⬅️ METTI QUI IL NUMERO REALE DI PAGINE
+const totalPages = 8; // ⬅️ METTI QUI IL NUMERO REALE DI PAGINE
 
 const images = Array.from({ length: totalPages }, (_, i) => {
   const n = String(i + 1).padStart(2, "0"); // 01, 02, 03...
@@ -43,3 +43,4 @@ pageEl.addEventListener("touchend", e => {
 }, { passive: true });
 
 render();
+
